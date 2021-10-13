@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KG_Frutti</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- Подключение css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerBg">
+            <div class="container">
+                <div class="header__top">
+                    <ul class="header__top-left">
+                        <li>
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:omurovatinatin@gmail.com">omurovatinatin@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <a href="tel:+996705160622">+996(705)160622</a>
+                        </li>
+                    </ul>
+                    <div class="header__top-right">
+                        <div id="lang">
+                            <span class="icon"><i class="fas fa-language"></i></span>
+                            <select name="language" id="language">
+                                <option value="kyrgyz">Кыргыз тили</option>
+                                <option value="russian">Русский язык</option>
+                                <option value="english">English</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <a href="#" class="login">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__bottom">
+                <div class="logo"></div>
+                <h2 class="frutti">KG Frutti</h2>
+                <ul class="header__menu active">
+                    <li>
+                        <a class="header__menu-link active" href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a class="header__menu-link" href="./index.html#products">Овощи и Фрукты</a>
+                    </li>
+                    <li>
+                        <a class="header__menu-link" href="./index.html#aboutUs">Онас</a>
+                    </li>
+                    <li>
+                        <a class="header__menu-link" href="./index.html#footer">Контакты</a>
+                    </li>
+                    <li class="burger__delete">
+                        <img  src="img/svg/burger-delete.svg" alt="burger-delete">
+                    </li>
+                </ul>
+                <div class="burger-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="bannerBg">
+            <div class="banner">
+                <div class="container">
+                    <div class="banner__inner">
+                        <div class="banner__circle">
+                            <h1>KG Frutti</h1>
+                            <p>Натуральные овощи и фрукты, только для вас!</p>
+                            <button><a href="./index.html#products">Покупка</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="container">
+                <div class="products__inner">
+                    <p>Самое лучшее и вкусное, только для вас!</p>
+                    <h1>Наши продукты</h1>
+                    <ul class="products__menu nav">
+                        <li data-f="products__item">Все продукты</li>
+                        <li data-f="fru">Фрукты</li>
+                        <li data-f="veg">Овощи</li>
+                        <li>
+                            <form action="#" method="GET" class="search-form" id="search-item">
+                                <input type="text" placeholder="Поиск товаров" id="elastic">
+                                <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+                                <button id="delete-btn"><i class="fas fa-times"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="products__item-wrapper elastic" id="partone">
+                    <li class="products__item fru">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/The Apple Experiment.jpg" alt="apple">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Яблоко</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/tomato.jpg" alt="tomato">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Помидор</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item fru">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/cherry.jpg" alt="cherry">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Вишня</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item fru">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/pear.png" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Груша</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item fru">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/peach.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Персик</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/pumpkin.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Тыква</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/garlic.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Чеснок</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/Red Chilli Peppers.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Красный чили</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/onion.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Лук</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item fru">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/grapes.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Виноград</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/cucumber.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Огурец</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="products__item veg">
+                        <span class="sale"><span>-25%</span></span>
+                        <div class="products__item-image">
+                            <img src="./img/potato.jpg" alt="">
+                        </div>
+                        <div class="products__item-content">
+                            <div class="product__bottom-wrapper">
+                                <p class="ttl">Картошка</p>
+                                <div class="product__price-wrapper">
+                                    <div class="product__current-price"><span class="current-price">50</span>
+                                        <span>C</span></div>
+                                    <div class="product__old-price"><span class="old-price">60</span>
+                                        <span>C</span></div>
+                                </div>
+                                <div class="product__weight-and-vendor">
+                                    <div class="product__weight">за 1 кг</div>
+                                    <div class="product__product-vendor-code">арт. 000423</div>
+                                </div>
+                            </div>
+                            <div class="shop-cart"><img src="./img/svg/shop-bag-7.svg" alt=""></div>
+                    </li>
+                </ul>
+                <!-- Корзина -->
+                <div class="shoppingCart">
+                    <button class="shoppingCart__bag"><i class="fas fa-shopping-cart"></i></button>
+                    <div class="shoppingCart__score">
+                        <h6>Сумма</h6>
+                        <span class="shoppingCart__score-cart">0</span>
+                        /
+                        <span class="shoppingCart__score-price">0</span>
+                    </div>
+                    <div class="shoppingCart__drop">
+                        <div class="shoppingCart__drop-inner">
+                            <div class="shoppingCart__drop-products">
+                                <ul class="shoppingCart__drop-items">
+                                    <!-- Здесь товары в корзине -->
+                                </ul>
+                            </div>
+                            <div class="shoppingCart__drop-bottom">
+                                <div class="shoppingCart__drop-total">
+                                    <p>Итого к оплате:</p>
+                                    <span class="total-price">0</span><span>Сом</span>
+                                </div>
+                                <button class="shoppingCart__drop-btn">Оформить заказ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutUs" id="aboutUs">
+            <div class="container">
+                <article class="aboutUs__article">
+                    <h2 class="aboutUs__article-title">О нас</h2>
+                    <p class="aboutUs__article-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Architecto suscipit inventore soluta deserunt fugit molestiae molestias accusantium similique
+                        sint rerum maiores modi repellat porro, quas necessitatibus corrupti, impedit sunt tenetur.Lorem
+                        ipsum dolor, sit amet consectetur adipisicing elit. Architecto suscipit inventore soluta
+                        deserunt fugit molestiae molestias accusantium similique sint rerum maiores modi repellat porro,
+                        quas necessitatibus corrupti, impedit sunt tenetur.</p>
+                </article>
+            </div>
+            <div class="aboutUs__container">
+                <div class="aboutUs__sidebar">
+                    <div style="background: linear-gradient(229.99deg, #77b100 -26%, #acbc3e 145%);">
+                        <h1>Ошские винограды</h1>
+                        <p>Love, death & robots</p>
+                    </div>
+                    <div style="background: linear-gradient(215.32deg, #109f3e -1%, #32e36a 124%);">
+                        <h1>Чуйские огурцы</h1>
+                        <p>Love, death & robots</p>
+                    </div>
+                    <div style="background: linear-gradient(221.87deg, #fb7f3b 1%, #f7a243 128%);">
+                        <h1>Баткенские урюки</h1>
+                        <p>Love, death & robots</p>
+                    </div>
+                    <div style="background: linear-gradient(220.16deg, #da3a29 -8%, #ed1c2a 138%);">
+                        <h1>Иссык Кульские яблоки</h1>
+                        <p>Love, death & robots</p>
+                    </div>
+                </div>
+                <div class="aboutUs__main-slide">
+                    <div style="
+                      background-image: url('./img/slide/issukkul.jpg');
+                    "></div>
+                    <div style="
+                      background-image: url('./img/slide/batken.jpg');
+                    "></div>
+                    <div style="
+                      background-image: url('./img/slide/chui.jpg');
+                    "></div>
+                    <div style="
+                      background-image: url('./img/slide/osh.jpg');
+                    "></div>
+                </div>
+                <div class="aboutUs__controls">
+                    <button class="down-button button">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button class="up-button button">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Start of Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__contacts">
+                    <h2 class="footer__contacts-title">KG Frutti</h2>
+                    <div class="footer__contacts-tel">
+                        <i class="fas fa-phone icon-size"></i>
+                        <a href="tel:+996705160622">+996(705)160622</a>
+                    </div>
+                    <div class="footer__contacts-email">
+                        <i class="fas fa-envelope icon-size"></i>
+                        <a href="mailto:omurovatinatin@gmail.com">omurovatinatin@gmail.com</a>
+                    </div>
+                    <nav>
+                        <ul class="footer__contacts-socials">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vine"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__subscription">
+                    <h3>Подписаться на рассылку</h3>
+                    <input type="text" class="input" placeholder="Введите ваш E-mail">
+                    <button class="footer__subscription-btn">Подписаться</button> <br>
+                    <input type="checkbox" class="checkbox">
+                    <p>Я согласен с условиями обработки персональных данных</p>
+                </div>
+            </div>
+            <p class="copyright">© 2021 Omurova Tinatin - Front-end Developer.</p>
+        </div>
+    </footer>
+    <!-- The end of Footer -->
+
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

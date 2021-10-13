@@ -1,0 +1,98 @@
+/* todo Header bottom */
+.bannerBg {
+    background-image: linear-gradient(339deg, #cf9e27, #dbaa2b, #F1CF53, #F1CF53)
+}
+
+.banner {
+    background-image: url(../img/yellow-banner1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media(min-width: 1024px) {}
+
+    &__inner {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        @media(min-width: 1024px) {
+            height: 700px;
+        }
+    }
+
+    &__circle {
+        width: 225px;
+        height: 225px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50%;
+
+        background-color: rgba(255, 255, 255, 0.26);
+
+        @media(min-width: 1024px) {
+            width: 350px;
+            height: 350px;
+            margin-left: 40px;
+        }
+
+        h1 {
+            font-family: "Abril-Regular";
+            font-size: 50px;
+            position: absolute;
+            top: 230px;
+            margin: 20px 0 20px 0;
+            letter-spacing: 3px;
+            color: $main-red;
+
+            @media(min-width: 1024px) {
+                font-size: 80px;
+                letter-spacing: 15px;
+                top: 350px;
+            }
+        }
+
+        p {
+            font-family: "SpaceMono-Regular";
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 15px 0 15px 0;
+            font-size: 14px;
+            color: $dark-green;
+
+            @media(min-width: 1024px) {
+                font-size: 17px;
+            }
+        }
+
+        button {
+            width: 150px;
+            height: 44px;
+            font-family: "SpaceMono-bold";
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-radius: 25px;
+            margin: 5px 0 27px 0;
+            background-color: $main-red;
+
+            @media(min-width: 1024px) {
+                height: 50px;
+                margin: 15px 0 45px 0;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            &:hover {
+                font-size: 16px;
+            }
+        }
+    }
+}

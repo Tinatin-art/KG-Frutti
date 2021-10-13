@@ -1,0 +1,64 @@
+// Переменные
+$main-yellow: #f3e035;
+$bg-yellow: #cf9e27;
+$green: #779910;
+$dark-green: #2a7802;
+$main-green: #abcd02;
+$red: #d10012;
+$main-red: #ce0012;
+$grey: #6d6d6d;
+
+
+
+// Шрифты
+
+@font-face {
+    font-family: "Abril-Regular";
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SpaceMono-bold";
+    src: url(../fonts/SpaceMono-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SpaceMono-Regular";
+    src: url(../fonts/SpaceMono-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Urbanist-Regular";
+    src: url(../fonts/Urbanist-Regular.ttf);
+    font-weight: 400;
+}
+
+// Общие стили
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+    padding: 0 15px;
+
+}
