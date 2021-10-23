@@ -118,6 +118,35 @@ module.exports = delete_product;
 
 /***/ }),
 
+/***/ "./src/module/menu_burger.js":
+/*!***********************************!*\
+  !*** ./src/module/menu_burger.js ***!
+  \***********************************/
+/***/ ((module) => {
+
+function menuBurger(){
+
+    // Меню бургер Сайдбар
+   
+    const burgerMenuBtn = document.querySelector(".burger-btn");
+    const burgerMenu = document.querySelector('.header__menu');
+    const burgerDeleteBtn = document.querySelector('.burger__delete');
+   
+   
+    burgerMenuBtn.addEventListener("click", function () {
+        burgerMenu.style.display = "block"
+    })
+   
+    burgerDeleteBtn.addEventListener("click", function () {
+        burgerMenu.style.display = "none"
+    })
+
+}
+
+module.exports = menuBurger;
+
+/***/ }),
+
 /***/ "./src/module/script.js":
 /*!******************************!*\
   !*** ./src/module/script.js ***!
@@ -125,16 +154,6 @@ module.exports = delete_product;
 /***/ ((module) => {
 
 function script() {
-    function openNav() {
-        document.querySelector('.header-menu').style.display = "block";
-        document.querySelector('.header_burger').style.display = "none";
-    }
-
-    function closeNav() {
-        document.querySelector('.header-menu').style.display = "none";
-        document.querySelector('.header_burger').style.display = "block";
-    }
-
     // Обявление переменных
     const searchForm = document.forms['search-item'];
 
@@ -221,22 +240,6 @@ function script() {
         });
 
     });
-
-
-    // Меню бургер Сайдбар
-
-    const burgerMenuBtn = document.querySelector(".burger-btn");
-    const burgerMenu = document.querySelector('.header__menu');
-    const burgerDeleteBtn = document.querySelector('.burger__delete');
-
-
-    burgerMenuBtn.addEventListener("click", function () {
-        burgerMenu.style.display = "block"
-    })
-
-    burgerDeleteBtn.addEventListener("click", function () {
-        burgerMenu.style.display = "none"
-    })
 
 }
 
@@ -372,7 +375,8 @@ var __webpack_exports__ = {};
         delete_product = __webpack_require__(/*! ./module/delete_product */ "./src/module/delete_product.js"),
         sum_price = __webpack_require__(/*! ./module/sum_price */ "./src/module/sum_price.js"),
         slide = __webpack_require__(/*! ./module/slide */ "./src/module/slide.js"),
-        script = __webpack_require__ (/*! ./module/script */ "./src/module/script.js")
+        script = __webpack_require__ (/*! ./module/script */ "./src/module/script.js"),
+        menuBurger = __webpack_require__ (/*! ./module/menu_burger */ "./src/module/menu_burger.js")
 
     add_to_cart();
     delete_product();
@@ -380,6 +384,7 @@ var __webpack_exports__ = {};
     count_product();
     slide();
     script();
+    menuBurger();
 }());
 })();
 

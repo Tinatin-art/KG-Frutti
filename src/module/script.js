@@ -1,14 +1,4 @@
 function script() {
-    function openNav() {
-        document.querySelector('.header-menu').style.display = "block";
-        document.querySelector('.header_burger').style.display = "none";
-    }
-
-    function closeNav() {
-        document.querySelector('.header-menu').style.display = "none";
-        document.querySelector('.header_burger').style.display = "block";
-    }
-
     // Обявление переменных
     const searchForm = document.forms['search-item'];
 
@@ -95,22 +85,6 @@ function script() {
         });
 
     });
-
-
-    // Меню бургер Сайдбар
-
-    const burgerMenuBtn = document.querySelector(".burger-btn");
-    const burgerMenu = document.querySelector('.header__menu');
-    const burgerDeleteBtn = document.querySelector('.burger__delete');
-
-
-    burgerMenuBtn.addEventListener("click", function () {
-        burgerMenu.style.display = "block"
-    })
-
-    burgerDeleteBtn.addEventListener("click", function () {
-        burgerMenu.style.display = "none"
-    })
 
 }
 
